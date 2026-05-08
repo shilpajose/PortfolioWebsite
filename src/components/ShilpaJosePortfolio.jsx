@@ -484,10 +484,10 @@ export default function ShilpaPortfolio() {
                   { label: "TS", angle: 300, dist: 120, color: "#3178C6" },
                   { label: "MongoDB", angle: 60, dist: 110, color: "#4DB33D" },
                   { label: "Tailwind", angle: 180, dist: 120, color: "#38BDF8" },
-                  {label: "Express", angle: 270, dist: 100, color: "#38BDF8"},
-                  {label: "MERN", angle: 330, dist: 140, color: "#A78BFA"},
-                  {label: "UI/UX", angle: 90, dist: 100, color: "#F472B6"},
-                  {label: "Javascript", angle: 210, dist: 90, color: "#FBBF24"},
+                  { label: "Express", angle: 270, dist: 100, color: "#38BDF8" },
+                  { label: "MERN", angle: 330, dist: 140, color: "#A78BFA" },
+                  { label: "UI/UX", angle: 90, dist: 100, color: "#F472B6" },
+                  { label: "Javascript", angle: 210, dist: 90, color: "#FBBF24" },
                 ].map(({ label, angle, dist, color }) => (
                   <div key={label} style={{
                     position: "absolute",
@@ -509,18 +509,23 @@ export default function ShilpaPortfolio() {
           </div>
         </section>
 
-        {/* ── ABOUT ── */}
+        {/* ── ABOUT ── */} 
         <Section id="about">
           <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 5%" }}>
             <div style={{ marginBottom: 16 }}><span className="tag-gradient">About Me</span></div>
-            <h2 className="section-title" style={{ marginBottom: 48 }}>A developer who <span className="gradient-text">builds things</span></h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40 }}>
+            <h2 className="section-title" style={{ marginBottom: 48 }}>
+              A developer who <span className="gradient-text">builds things</span>
+            </h2>
+            <div className="about-grid">
               <div>
                 <p style={{ fontSize: 16, lineHeight: 1.9, color: "rgba(255,255,255,0.6)", marginBottom: 20 }}>
-                  I'm a React Developer based in Ernakulam, India with a strong foundation in full-stack web development. I hold an MCA from Karunya University and a MERN Stack certification from Luminar Technolab, Kochi.
+                  I'm a React Developer based in Ernakulam, India with a strong foundation in full-stack web development.
+                  I hold an MCA from Karunya University and a MERN Stack certification from Luminar Technolab, Kochi.
                 </p>
                 <p style={{ fontSize: 16, lineHeight: 1.9, color: "rgba(255,255,255,0.6)", marginBottom: 32 }}>
-                  Most recently, I worked at Proximagenesis Pvt Ltd on the JLR (Jaguar Land Rover) e-commerce platform — a large-scale React application used by car buyers worldwide. I'm passionate about clean code, beautiful interfaces, and experiences that feel effortless.
+                  Most recently, I worked at Proximagenesis Pvt Ltd on the JLR (Jaguar Land Rover) e-commerce platform —
+                  a large-scale React application used by car buyers worldwide. I'm passionate about clean code,
+                  beautiful interfaces, and experiences that feel effortless.
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                   {["React JS", "Node.js", "MongoDB", "TypeScript", "Redux", "Tailwind"].map(s => (
@@ -654,7 +659,7 @@ export default function ShilpaPortfolio() {
               {[
                 { icon: "✉️", label: "shilpajm05@gmail.com", href: "mailto:shilpajm05@gmail.com" },
                 { icon: "📞", label: "9526267756", href: "tel:9526267756" },
-                { icon: "🔗", label: "LinkedIn", href: "https://www.linkedin.com/in/shilpajose-624792230/" ,target:"_blank"},
+                { icon: "🔗", label: "LinkedIn", href: "https://www.linkedin.com/in/shilpajose-624792230/", target: "_blank" },
               ].map(({ icon, label, href, target }) => (
                 <a key={label} href={href} target={target} style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: 13, transition: "color 0.2s" }}
                   onMouseEnter={e => e.currentTarget.style.color = "#A78BFA"}
